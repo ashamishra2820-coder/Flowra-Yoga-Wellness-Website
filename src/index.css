@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply font-body bg-sand-50 text-sage-900 antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    @apply font-display;
+}
+
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
